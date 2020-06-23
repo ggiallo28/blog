@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="https://www.freeme.name/sitemap.xsl"?>
+<?xml-stylesheet type="text/xsl" href="https://freeme.name/sitemap.xsl"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <url>
-<loc>https://www.freeme.name/</loc>
+<loc>https://freeme.name/</loc>
 </url>
 <url>
-<loc>https://www.freeme.name/cloudoformation-iac/</loc>
+<loc>https://freeme.name/cloudoformation-iac/</loc>
 <lastmod>2020-06-23T17:50:16+02:00</lastmod>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/13/Diapositiva1-2.png</image:loc>
+<image:loc>https://freeme.name/media/posts/13/Diapositiva1-2.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.freeme.name/create-a-personal-website/</loc>
+<loc>https://freeme.name/create-a-personal-website/</loc>
 <lastmod>2020-06-23T03:01:08+02:00</lastmod>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/wordpress-on-aws-2.png</image:loc>
+<image:loc>https://freeme.name/media/posts/10/wordpress-on-aws-2.png</image:loc>
 <image:title><![CDATA[WordPress: Best Practices on AWS]]></image:title>
 </image:image>
 <image:image>
@@ -28,7 +28,7 @@
 <image:title><![CDATA[Creating a new Publii WebSite]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/Schermata-2020-06-08-alle-22.56.41.png</image:loc>
+<image:loc>https://freeme.name/media/posts/10/Schermata-2020-06-08-alle-22.56.41.png</image:loc>
 <image:title><![CDATA[Install a Publii Theme]]></image:title>
 </image:image>
 <image:image>
@@ -36,51 +36,51 @@
 <image:title><![CDATA[Initial post screen with choice of editors]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/Schermata-2020-06-23-alle-00.10.01-2.png</image:loc>
+<image:loc>https://freeme.name/media/posts/10/Schermata-2020-06-23-alle-00.10.01-2.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/Schermata-2020-06-08-alle-23.00.57.png</image:loc>
+<image:loc>https://freeme.name/media/posts/10/Schermata-2020-06-08-alle-23.00.57.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/StaticWebSite.svg</image:loc>
+<image:loc>https://freeme.name/media/posts/10/StaticWebSite.svg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/10/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/10/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.freeme.name/do-you-automate/</loc>
+<loc>https://freeme.name/do-you-automate/</loc>
 <lastmod>2020-06-22T20:27:04+02:00</lastmod>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/9/amleto_con_teschio.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/9/amleto_con_teschio.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/9/ai101-2.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/9/ai101-2.jpg</image:loc>
 <image:title><![CDATA[Image by Dreamstime]]></image:title>
 </image:image>
 </url>
 <url>
-<loc>https://www.freeme.name/initial-commit/</loc>
+<loc>https://freeme.name/initial-commit/</loc>
 <lastmod>2020-06-22T20:22:06+02:00</lastmod>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/8/101400142_2907208436001105_1909684099233087488_o-2.jpg</image:loc>
+<image:loc>https://freeme.name/media/posts/8/101400142_2907208436001105_1909684099233087488_o-2.jpg</image:loc>
 <image:title><![CDATA[Photo by Angelo Vitolo]]></image:title>
 </image:image>
 <image:image>
-<image:loc>https://www.freeme.name/media/posts/8/Schermata-2020-06-01-alle-21.19.53.png</image:loc>
+<image:loc>https://freeme.name/media/posts/8/Schermata-2020-06-01-alle-21.19.53.png</image:loc>
 <image:title><![CDATA[]]></image:title>
 </image:image>
 </url>
