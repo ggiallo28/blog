@@ -1,0 +1,600 @@
+<!doctype html><html amp lang="en"><head><meta charset="utf-8"><title>Create a Personal Website - Gianluigi Mucciolo</title><meta name="description" content="The Serverless infrastructure behind a static web site. Do you want make it yours? You can start from here.   "><link rel="canonical" href="https://ggiallo28.github.io/blog/create-a-personal-website/"><meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1"><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet" type="text/css"><script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script><script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script><script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script><script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script><script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://ggiallo28.github.io/blog/amp/create-a-personal-website/"},"headline":"Create a Personal Website","datePublished":"2020-05-31T16:51","dateModified":"2020-06-23T03:01","image":{"@type":"ImageObject","url":"https://ggiallo28.github.io/blog/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg","height":3456,"width":5184},"description":"The Serverless infrastructure behind a static web site. Do you want make it yours? You can start from here. Having&hellip;","author":{"@type":"Person","name":"Gianluigi Mucciolo"},"publisher":{"@type":"Organization","name":"Gianluigi Mucciolo","logo":{"@type":"ImageObject","url":"https://ggiallo28.github.io/blog/media/website/GialloB-2.png","height":400,"width":400}}}</script><style amp-custom>article,
+aside,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+amp-img {
+  max-width: 100%; }
+
+button,
+input,
+select,
+textarea {
+  font: inherit; }
+
+html {
+  font-size: 1rem; }
+
+body {
+  background: #f1f1f1;
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  line-height: 1.6; }
+
+a {
+  color:  #039be5;
+  text-decoration: none;
+  -webkit-transition: all 0.12s linear 0s;
+  -o-transition: all 0.12s linear 0s;
+  transition: all 0.12s linear 0s; }
+
+a:hover {
+  color: #262626;
+  text-decoration: underline;
+  -webkit-text-decoration-skip: ink;
+  text-decoration-skip: ink; }
+
+a:active {
+  color: #262626; }
+
+a:focus {
+  outline: 2px dotted #039be5; }
+
+figure,
+blockquote,
+p,
+ul,
+ol,
+dl,
+table,
+hr,
+fieldset {
+  margin-top: 1.6rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #262626;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2.13333rem; }
+
+h1 {
+  font-size: 1.67583rem;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.4729rem; }
+
+h3 {
+  font-size: 1.29454rem; }
+
+h4 {
+  font-size: 1.13778rem; }
+
+h5 {
+  font-size: 1rem; }
+
+h6 {
+  font-size: 0.87891rem; }
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: 0.8rem; }
+
+b,
+strong {
+  font-weight: 600; }
+
+blockquote {
+  color: #6c7175;
+  font-family: "Droid Serif", "Times", "Source Serif Pro", serif;
+  font-style: italic;
+  padding: 1.33333rem 0.53333rem 1.33333rem 3.2rem;
+  position: relative; }
+  blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 4.41226rem;
+    position: absolute;
+    left: 0;
+    top: -12px;
+    color: rgba(108, 113, 117, 0.5); }
+  blockquote > :nth-child(1) {
+    margin-top: 0; }
+
+ul,
+ol {
+  margin-left: 2rem; }
+  ul > li,
+  ol > li {
+    list-style: inherit;
+    padding: 0 0 0.26667rem 0.26667rem; }
+
+dl dt {
+  color: #262626;
+  font-weight: 600; }
+
+code,
+pre {
+  background-color: #f1f1f1;
+  font-family: monospace; }
+
+pre {
+  margin: 1.6rem 0 0;
+  padding: 1.6rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto; }
+  pre > code {
+    color: #262626;
+    padding: 0; }
+
+code {
+  border-radius: 3px;
+  color: #262626;
+  padding: 0.26667rem 0.53333rem; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #d4d4d4;
+  width: 100%;
+  overflow-x: auto;
+  vertical-align: top;
+  text-align: left;
+  white-space: nowrap; }
+  table th {
+    font-weight: 500;
+    padding: 0.53333rem 1.06667rem; }
+  table tr {
+    border-bottom: 1px solid #d4d4d4; }
+    table tr:nth-child(2n) {
+      background: #f1f1f1; }
+  table td {
+    padding: 0.53333rem 1.06667rem; }
+
+figcaption {
+  clear: both;
+  color: rgba(108, 113, 117, 0.6);
+  font-size: 0.82397rem;
+  margin: 0.8rem 0 0;
+  text-align: center; }
+
+sub,
+sup {
+  font-size: 65%; }
+
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+.btn, [type=button],
+[type=submit],
+button {
+  background: #039be5;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.87891rem;
+  font-weight: 500;
+  line-height: 1.9;
+  padding: 0.53333rem 1.33333rem;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all .15s ease;
+  -o-transition: all .15s ease;
+  transition: all .15s ease;
+  width: auto; }
+  .btn:hover, [type=button]:hover,
+  [type=submit]:hover,
+  button:hover {
+    background: #262626;
+    color: #ffffff; }
+  .btn:focus, [type=button]:focus,
+  [type=submit]:focus,
+  button:focus {
+    outline: none; }
+  .btn-outline {
+    border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 3px;
+    color: #262626; }
+
+[type=button],
+[type=submit],
+button {
+  text-transform: uppercase;
+  -webkit-appearance: none;
+  -moz-appearance: none; }
+
+.navbar {
+  background: #039be5;
+  -webkit-box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+  line-height: 3;
+  max-height: 4rem; }
+  .navbar > div {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: left;
+    max-width: 700px;
+    margin: 0 auto; }
+  .navbar a {
+    color: #ffffff;
+    text-decoration: none; }
+  .navbar-sidebar-toggle {
+    left: 0;
+    position: relative;
+    text-indent: -99999rem; }
+    .navbar-sidebar-toggle:before {
+      content: "";
+      display: block;
+      border-top: 0.375rem double #ffffff;
+      border-bottom: 0.125rem solid #ffffff;
+      height: 0.125rem;
+      position: absolute;
+      text-indent: 0;
+      top: 50%;
+      width: 1.3rem;
+      -webkit-transform: translate(0px, -50%);
+      -ms-transform: translate(0px, -50%);
+      transform: translate(0px, -50%); }
+
+
+.logo {
+            background-image: url('https://ggiallo28.github.io/blog/media/website/GialloB-2.png');
+            background-size: auto 2rem;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: inline-block;
+  font-weight: 600;
+  line-height: 1;
+            margin: 0 auto;
+            height: 2rem;
+            text-indent: -9999px;
+            width: 240px;vertical-align: middle;
+        }
+        .logo.logo-text {
+            line-height: 2;
+            text-align: center;
+            text-indent: 0;
+        }
+
+amp-sidebar {
+  background: #ffffff;
+  width: 240px; }
+  amp-sidebar > ul {
+    margin: 0.8rem 0 0;
+    padding: 0; }
+    amp-sidebar > ul ul {
+      border-left: 1px solid #d4d4d4;
+      margin: 0.53333rem 0 0; }
+    amp-sidebar > ul li {
+      color: #262626;
+      font-size: 0.9375rem;
+      font-weight: 600;
+      list-style: none;
+      line-height: 1.4;
+      padding: 0.42667rem 1.06667rem; }
+      amp-sidebar > ul li li {
+        font-weight: normal;
+        padding: 0.26667rem 0 0.26667rem 1.06667rem; }
+    amp-sidebar > ul a,
+    amp-sidebar > ul a:visited {
+      color: #262626; }
+
+.bg-white {
+  background: #ffffff; }
+
+.wrap-page {
+  max-width: 700px;
+  margin: 0 auto; }
+
+@media all and (max-width: 43.6875em) {
+  .wrap-inner {
+    padding: 0 6%; } }
+
+.page-title {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding: 1.6rem 6%; }
+  .page-title > h1 {
+    margin: 0;
+    font-size: 1.29454rem; }
+  .page-title > p {
+    font-size: 0.87891rem;
+    color: #6c7175;
+    line-height: 1.3;
+    margin: 0.26667rem 0 0; }
+  .page-title-author {
+    border-radius: 50%;
+    float: left;
+    height: 2.5rem;
+    width: 2.5rem; }
+    .page-title-author + h1 {
+      margin-left: 3.5rem; }
+      .page-title-author + h1 + p {
+        margin-left: 3.5rem; }
+
+.card {
+  background: #ffffff;
+  -webkit-box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  box-shadow: 0 2px 3px rgba(38, 38, 38, 0.1);
+  margin-bottom: 0.8rem;
+  padding-bottom: 1.06667rem; }
+
+  .card-meta {
+    border-top: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-top: 1.06667rem;
+    text-transform: uppercase; }
+    .card-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .card-text {
+    font-size: 0.9375rem;
+    overflow: hidden;
+    padding: 0 6%; }
+    .card-text h2 {
+      font-size: 1.13778rem; }
+
+.post {
+  margin-bottom: 2.13333rem; }
+  .post-featured-image {
+    margin-top: 0;
+    position: relative; }
+    .post-featured-image > figcaption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 3px;
+      color: #ffffff;
+      position: absolute;
+      bottom: 0.8rem;
+      padding: 0 0.26667rem;
+      right: 6%; }
+  .post-header {
+    margin-bottom: 2.13333rem; }
+  .post-meta {
+    border-bottom: 1px solid #d4d4d4;
+    color: rgba(108, 113, 117, 0.6);
+    font-size: 0.7242rem;
+    font-weight: 500;
+    margin-top: 1.06667rem;
+    padding-bottom: 1.06667rem;
+    text-transform: uppercase; }
+    .post-meta a + time:before {
+      content: "";
+      background: #d4d4d4;
+      display: inline-block;
+      height: 3px;
+      margin: 0 8px;
+      width: 3px;
+      vertical-align: middle;
+      border-radius: 50%; }
+  .post-tag {
+    margin: 0; }
+    .post-tag > li {
+      display: inline-block;
+      padding: 0; }
+      .post-tag > li a {
+        background: #f1f1f1;
+        border-radius: 2px;
+        color: #6c7175;
+        font-size: 0.77248rem;
+        display: inline-block;
+        margin: 0 0.26667rem 0.26667rem 0;
+        padding: 0.26667rem 0.53333rem; }
+        .post-tag > li a:hover {
+          background: #039be5;
+          color: #ffffff;
+          text-decoration: none; }
+  .post-share {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 1.6rem;
+    width: 100%; }
+    .post-share amp-social-share {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+      flex: 1 0 auto;
+      background-size: 24px; }
+  .post-scroll {
+    color: #ffffff;
+    background: #039be5;
+    bottom: 10px;
+    border-radius: 50%;
+    border: none;
+    -webkit-box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    box-shadow: 0 1px 1.5px 0 rgba(38, 38, 38, 0.12), 0 1px 1px 0 rgba(38, 38, 38, 0.24);
+    font-size: 1.13778rem;
+    height: 46px;
+    opacity: 0;
+    outline: none;
+    position: fixed;
+    padding: 0;
+    right: 4%;
+    visibility: hidden;
+    width: 46px;
+    z-index: 9999; }
+    .post-scroll-marker {
+      height: 0px;
+      position: absolute;
+      top: 100px;
+      width: 0px; }
+        .post-pagination {
+    background: #f1f1f1;
+    -webkit-box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    box-shadow: inset 0 2px 3px rgba(38, 38, 38, 0.1);
+    border-top: 1px solid #d4d4d4;
+    padding: 1.06667rem 0; }
+    .post-pagination > div {
+      line-height: 1.2;
+      padding: 0.53333rem 1.06667rem;
+      text-align: center; }
+      .post-pagination > div span {
+        display: block;
+        color: #6c7175;
+        font-size: 0.7242rem;
+        font-weight: 500;
+        margin-bottom: 0.26667rem;
+        text-transform: uppercase; }
+    .post-pagination-prev a:before {
+      content: "\2190";
+      margin-right: 0.26667rem; }
+    .post-pagination-next a:after {
+      content: "\2192";
+      margin-left: 0.26667rem; }
+
+aside {
+  margin: 1.6rem 0 0; }
+
+.align-left {
+  text-align: left; }
+
+.align-right {
+  text-align: right; }
+
+.align-center {
+  text-align: center; }
+
+.align-justify {
+  text-align: justify; }
+
+.msg {
+  border-left: 2px solid transparent;
+  padding: 1.06667rem 1.06667rem; }
+  .msg--highlight {
+    background-color: #fff8e6;
+    border-color: #e2ac4f; }
+  .msg--info {
+    background: rgba(45, 97, 201, 0.03);
+    border-color: #039be5; }
+  .msg--success {
+    background: #f7fbf6;
+    border-color: #5ab44b; }
+  .msg--warning {
+    background: #fff3f3;
+    border-color: #c06367;
+    color: #a94442; }
+
+.dropcap:first-letter {
+  float: left;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-size: 2.16943rem;
+  line-height: 0.7;
+  margin-right: 0.53333rem;
+  padding: 0.53333rem 0.53333rem 0.53333rem 0; }
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0.8rem 0; }
+  .pagination > a {
+    padding-left: 0;
+    padding-right: 0;
+    width: 49%; }
+  .pagination-right {
+    margin-left: auto; }
+
+.bottom {
+  background: #039be5;
+  color: #ffffff;
+  padding: 1.06667rem 4%;
+  text-align: center; }
+
+    /*
+ * Put your custom CSS code here (it will be used only in the AMP mode)
+ */</style><style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript><script async src="https://cdn.ampproject.org/v0.js"></script><script custom-element="amp-animation" src="https://cdn.ampproject.org/v0/amp-animation-0.1.js" async></script><script custom-element="amp-position-observer" src="https://cdn.ampproject.org/v0/amp-position-observer-0.1.js" async></script></head><body class="bg-white"><nav class="navbar wrap-inner" id="top"><div><a on="tap:navbar-sidebar.toggle" class="navbar-sidebar-toggle" title="Menu">Menu</a> <a class="logo" href="https://ggiallo28.github.io/blog/amp/">Gianluigi Mucciolo</a></div></nav><main class="wrap-page"><article class="post"><figure class="post-featured-image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/hal-gatewood-tZc3vjPCk-Q-unsplash-xs.jpg 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/hal-gatewood-tZc3vjPCk-Q-unsplash-sm.jpg 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/hal-gatewood-tZc3vjPCk-Q-unsplash-md.jpg 768w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/hal-gatewood-tZc3vjPCk-Q-unsplash-lg.jpg 1200w" sizes="(min-width: 56.25em) 100vw, (min-width: 37.5em) 50vw, 100vw" height="3456" layout="responsive" width="5184"></amp-img><figcaption>Photo by Hal Gatewood on Unsplash</figcaption></figure><div class="wrap-inner"><header class="post-header"><h1>Create a Personal Website</h1><p class="post-meta">By <a href="https://ggiallo28.github.io/blog/amp/authors/gianluigi-mucciolo/" rel="nofollow" title="Gianluigi Mucciolo">Gianluigi Mucciolo</a> <time datetime="2020-05-31T16:51">31 May 2020</time></p></header><p>The Serverless infrastructure behind a static web site. Do you want make it yours? You can start from here. </p><hr><h4 id="0887" class="fs ft ct bj fu b fv fw fx fy fz ga gb gc gd ge gf gg gh gi gj gk">Why you need a personal website.</h4><p>Having a personal website is the new portfolio, a new way to introduce yourself, it is a requirement for people to trust you. Relevant content can help you to get your dream job.</p><p>Having a personal website gives you leverage to promote your content, share your knowledge. People are continuously looking for solutions to their problems, they search, read, comment, and can share your articles from any part of the world.</p><p>Having a personal website gives you a platform to share your idea. If you did a good job anyone can find and know more about you. It requires a bit of work to optimize Search Engine Optimization (SEO) and make your website available on Google, but you will get an enormous satisfaction. You can test your SEO score by using <a href="https://analytics.google.com/analytics/web/provision/#/provision" target="_blank" rel="noopener noreferrer">Google Analytics </a> or <a href="https://it.seotesteronline.com/" target="_blank" rel="noopener noreferrer">SEO Tester Online</a> for example but there are many others.</p><p>You can comment on this article to say what you think.</p><hr><h4>Decision focused on two alternatives.</h4><p>A Personal Website can be created in many different ways, but in most of cases you need a specialized technical knowledge, that's why a content management system, most often referred to as a CMS, is needed to allow individuals and businesses to edit, manage, and maintain existing website pages in a single interface.</p><p>Until today WordPress is the most popular CMS, so I started doing some research to figure out best practices to deploy a WordPress infrastructure on AWS, and I have found that something like this is needed:</p><figure class="post__image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/wordpress-on-aws-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/wordpress-on-aws-2-xs.png 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/wordpress-on-aws-2-sm.png 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/wordpress-on-aws-2-md.png 768w" alt="WordPress: Best Practices on AWS" width="1562" height="746" layout="responsive"></amp-img><figcaption><a href="https://aws.amazon.com/it/blogs/architecture/wordpress-best-practices-on-aws/">WordPress: Best Practice on AWS</a><a></a></figcaption></figure><p>The proposed solution looked to be very expensive, there are bunches of servers here, many of them are useless, at least for my use-case.</p><p>That's why I finally decided to use Publii.</p><blockquote><h4 class="align-center">Publii is new Static CMS with GUI to build an extremely safe, fast and stylish HTML website.</h4>Publii is a static-website-building tool for every skill level, from beginner to developer.</blockquote><h4><strong>How Publii works.</strong></h4><p>Publii does not work in the same way as other CMS, you don't need to buy hosting, upload CMS files and install it directly in the server. What this means is that in traditional CMS everything related to your website is run on the server, you need to install and configure tools and plugins, you must be connected to the internet to create new contents. By using Publii you can styling and creating content for your site offline on your desktop, you don't need to install anything but the Publii client. </p><h4><strong>Here are your action shortcuts to get a site using Publii:</strong></h4><h5 id="bf65" class="jg jh ds as ar ji jj jk jl jm jn jo jp jq jr js jt">Part I: Install Publii on your OS.</h5><p>You can get your Publii installer from the <a href="https://getpublii.com/download/">download page</a>. I used Mac OS environment, but Publii is also available for Windows and Linux. </p><p>The Publii client is the only thing that you need, no need to install plugins or configure anything else, you can download the installer, install it, and start using the client. </p><h5 id="bf65" class="jg jh ds as ar ji jj jk jl jm jn jo jp jq jr js jt">Part II: Create a WebSite using Publii Client.</h5><p>The first time you run Publii it ask you to create a new website, here you have to provide your website name and the author name that is used to create the author page. You can add more authors later.</p><figure class="post_center_image"><amp-img src="https://getpublii.com/docs/media/posts/49/creating-new-website.svg" data-is-external-image="true" alt="Creating a new Publii WebSite" width="1562" height="746" layout="responsive"></amp-img><figcaption>Creating a new Publii WebSite</figcaption></figure><p>You can create as many sites as you want, click on the current site name on the top left in the Publii Client, it gives you the full list of pages you have and a big "Add new WebSite" button. Click on the button to create a new site or use the list of pages to switch to a different page. </p><h5>Part III: Select a Theme for your Blog.</h5><p>You can get your Publii Theme from the <a href="https://marketplace.getpublii.com/">marketplace page</a>. There are many templates you can use, more will come in the future, many of them are free to use. </p><p>Once you have selected your favorite theme, hit download to get the zip file. To install a new theme navigate to the themes page by clicking on the three dots in the top-right of the Publii client, then clicking the themes option and Install theme as it is shown in the image.</p><figure class="post_center_image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/Schermata-2020-06-08-alle-22.56.41.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-xs.png 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-sm.png 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-md.png 768w" alt="Install a Publii Theme" width="1562" height="746" layout="responsive"></amp-img><figcaption>Install a Publii Theme</figcaption></figure><p>You can click on "Get more themes" to be redirected on the marketplace page.</p><h5>Part IV: Write your first Blog Post.</h5><p>To begin creating a post you can click on the posts option in the left-sidebar to be taken to the posts screen. The first time you do this you'll be presented with a choice of three different already build-in editors that you can use to create your first post; a Block Editor, a Markdown Editor, and a WYSIWYG Editor. </p><figure class="post_center_image"><amp-img src="https://getpublii.com/docs/media/posts/41/editors.svg" data-is-external-image="true" alt="Initial post screen with choice of editors" layout="responsive"></amp-img></figure><p>Every time you create a new post you can choose which editor to use, each one has its advantages and disadvantages. For example, I use Block Editor to share slides about a speech, Markdown Editor to create a README description of a project, and WYSIWYG Editor to create a discursive post like this one.</p><figure class="post_center_image post__image--center"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/Schermata-2020-06-23-alle-00.10.01-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-xs.png 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-sm.png 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-md.png 768w" alt="" layout="responsive"></amp-img><figcaption>Example of WYSIWYG Editor</figcaption></figure><p>Each post has its configuration. You can select the Featured image, add tags, update the SEO configuration, together with other options like having or not the comments section.</p><h5>Part V: Publish your Blog.</h5><p>When you are ready to go live you have to select the remote server, and perform deploy on it. </p><p>Publii includes support for traditional FTP and SFTP server, as well as for multiple Cloud-Hosting Solutions, there is also an option for Manual Deployment, which exports the website files to your local machine.</p><p>The remote server configuration is related on your selected option, I used Amazon S3 on Amazon Web Services. </p><p>When you are ready to go live you'll just need to hit the "Sync Your Website" button in the bottom-left of the Publii app. After that you have basically done.</p><figure class="post_center_image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/Schermata-2020-06-08-alle-23.00.57.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-xs.png 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-sm.png 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-md.png 768w" alt="" width="2880" height="1800" layout="responsive"></amp-img></figure><h5>Part VI: (Optional) Make your configuration portable.</h5><p>If you plan to work at the same website from different workstation you can synchronize your configuration with Dropbox. Here you can found the <a href="https://getpublii.com/docs/publii-on-multiple-computers-via-dropbox.html" target="_blank" rel="noopener noreferrer">official documentation</a> that instructs you on how to do this. </p><p>After installation Publii will store its files into a location on your computer, which will differ depending on whether you are using Windows, Linux or MacOS:</p><ul><li><strong>Windows</strong> stores the configuration in <code>C:\Users\USER NAME\Documents\Publii</code></li><li><strong>MacOS</strong> stores the configuration in <code>/Applications/Publii</code></li><li><strong>Linux</strong> stores the configuration in <code>/opt/Publii/resources/app/</code></li></ul><p>So, regardless of what method you are using to share your configuration, the only thing you need to do is:</p><ol><li>upload somewhere the Publii configuration;</li><li>sync your data with the target workstation:</li><li>create a page that has the same name as the one you are trying to import. </li></ol><h4>How the infrastructure of this web site looks like.</h4><p>This website has a full Serverless infrastructure. Serverless allows you to build and run applications and services without thinking about servers. This lets you focus on your application code instead of worrying about provisioning, configuring, and managing servers. You only need to configure services together and upload your application code. There is no software or runtime to install, maintain, or administer.</p><p>Below are the reasons and requirements for the proposed solution:</p><ul><li>Do not manage servers and installations, do not pay for unused resources;</li><li>Versioning, Continuous Integration and Delivery of the code;</li><li>Make available personal Resume both in PDF and HTML format;</li><li>Avoid using CSS, HTML and any related specialized technical knowledge;</li><li>Have an extensible solution.</li></ul><p>A diagram of the proposed solution is presented below:</p><figure class="post_center_image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/StaticWebSite.svg" alt="" width="654" height="641" layout="responsive"></amp-img></figure><h5>There Environments</h5><p>There are three environments: development, stage, and production.</p><p>Development environment is on my computer. Here is where I do all of my code updates and perform preliminary testing. I release the code when it works locally.</p><p>Stage environment is very similar to the production environment, in this case all of the code is on the Amazon S3 bucket instead of my local machine. All of the hard core testing happens here. The stage environment help me find and fix any issues that come up.</p><p>Production is for live code, is where users can access the final code after all of the updates and testing. Of all the environments, this is the most important one.</p><h5>CI/CD Pipeline</h5><p>The CI/CD pipeline helps me automate steps in my software delivery process, such as initiating code builds, running automated tests, and deploying to a stage or production environment.</p><p>In this case I use Code Pipeline and Code Build in order to automate the process of Personal Resume generation. Personal Resume is automatically generated from YAML configuration file in both HTML and PDF format. The pipeline generates the final result from a Jekyll Template.</p><h5>Public Domain</h5><p>Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service. I got the domain name directly from Amazon Route 53, but you can also transfer the registration for existing domains from other registrars to Route 53.</p><h6>Remote Server Configuration</h6><p>Publii let you to use Amazon S3 as remote server to host your static website, please read the <a href="https://getpublii.com/docs/setup-static-website-hosting-amazon-s3.html" target="_blank" rel="noopener noreferrer">official documentation</a> for the step by step configuration. </p><p>Amazon S3 is object-level storage that allows you to store as much data as you want. When an object being uploaded to or deleted from a specific bucket an event notifications is send. I used those notifications to trigger an AWS Lambda scripts that translates the whole website by using Amazon Translate. Publii does not have multi-language support for post content.</p><h5>Publii</h5><p>Publii is used for content generation. Publii Client is installed on my local machine and it already has everything is needed to develop the website, you don't need to install anything else.</p><p>Publii integrates Disqus for comments to posts, and google search for the content search component. </p><p>The configuration of Publii is synchronized with Github, git allows me to version the code and to work from different workstations.</p><h5>CloudFront</h5><p>Amazon CloudFront is a content delivery network (CDN), placed in front of Amazon S3 to deliver the assets and to improve the website performance. </p><p>You can create a distribution by using Amazon S3 as origin, in this case, the traffic generated between the service and CloudFront does not introduce any additional fee, and it enables secure connection over https, http to https redirect, gzip content compression and so on.</p><p>This is the most expensive component. I used Class 100 as pricing class, it uses only edges location placed in USA and Europe to serve the contents instead of whole global edge locations. This configurable option lets you reduce your delivery prices by excluding more expensive edge locations.</p><h4>How WebSite looks like using Infrastructure as Code</h4><p>As you may already know I love to Automate things. Below you can find the whole infrastructure as code you can use to replicate the whole website.</p><p>Here you can find the <a href="https://github.com/ggiallo28/publii-website/tree/master/cloudformation/hosting">CloudFormation template</a> related to the Publii infrastructure, it creates Amazon S3 Buckets, AWS Lambda functions, and Amazon CloudFront distribution, and the Record Sets in Amazon Route 53. I have created a Makefile that you can use for deploy. Before doing <code>make deploy ENV=stage</code> or <code>make deploy ENV=production</code> you have to update parameters file in envs folder. You must already have your domain name, an HTTPS Certificate in Nord Virginia Region, and an Amazon Translate Custom Terminology.</p><p>Personal Resume is created using a Jekyll Template, you can find it in the <a href="https://github.com/ggiallo28/online-cv" target="_blank" rel="noopener noreferrer">GitHub Repository</a>. I have created a Makefile that you can use for deploy. Before doing <code>make pipeline</code> you have to update BucketNames parameters, you can use those that are created during Publii infrastructure creation, and Sites parameters in the cloudformation.json file.</p><h4>How much it cost</h4><figure class="post_center_image"><amp-img src="https://ggiallo28.github.io/blog/media/posts/10/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-xs.jpg 300w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-sm.jpg 480w ,https://ggiallo28.github.io/blog/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-md.jpg 768w" alt="" width="533" height="400" layout="responsive"></amp-img></figure><p>In the proposed infrastructure these are the main cost items:</p><ul><li>CI/CD Pipeline, consisting of Code Pipeline and Code Build, cost about 1$/month only if the pipeline is executed, otherwise the cost is zero if the pipeline is never executed in a month.</li><li>Amazon S3 storage has a monthly cost of $0.023 per GB, practically zero since it is a static site.</li><li>WebSite requests have a monthly cost of $0.0004 per 1000 requests, zero if no one visits the site. This value reduced a lot because of the caching of the CloudFront distribution. </li><li>The Amazon Translate's API has free tier plan of 2 million characters per month, otherwise it cost about $15 for a million characters.</li><li>Amazon Route 53 Registrar cost is about $15/year.</li><li>CloudFront cost is related to the amount of traffic that is generated by user interactions and by the number of requests. Traffic has a monthly of $0.085 per GB, while requests have a monthly cost of 0,0120$ per 10000 requests, the price is zero if no one visits the site.</li></ul><p>The total cost of the solution is less than $4 per month.</p><p> </p><aside><ul class="post-tag"><li><a href="https://ggiallo28.github.io/blog/amp/blog/guide/">Guide</a></li></ul><div class="post-share"><amp-social-share type="system" width="40" height="40" data-param-text="Create a Personal Website"></amp-social-share><amp-social-share type="twitter" width="40" height="40" data-param-text="Create a Personal Website" data-param-url="https://ggiallo28.github.io/blog/amp/create-a-personal-website/"></amp-social-share><amp-social-share type="pinterest" width="40" height="40" data-param-url="https://ggiallo28.github.io/blog/amp/create-a-personal-website/"></amp-social-share><amp-social-share type="tumblr" width="40" height="40" data-param-text="Create a Personal Website" data-param-url="https://ggiallo28.github.io/blog/amp/create-a-personal-website/"></amp-social-share><amp-social-share type="whatsapp" width="40" height="40" data-param-text="Create a Personal Website"></amp-social-share></div></aside></div></article><nav class="post-pagination wrap-inner"><div class="post-pagination-prev"><span>Previous Post</span> <a href="https://ggiallo28.github.io/blog/amp/do-you-automate/">Do you Automate?</a></div><div class="post-pagination-next"><span>Next Post</span> <a href="https://ggiallo28.github.io/blog/amp/cloudoformation-iac/">Infrastructure as Code CloudFormation</a></div></nav></main><amp-animation id="showAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "1",
+                            "visibility": "visible",
+                            "transform": "scale(1)"
+                        }]
+                    }]
+                }</script></amp-animation><amp-animation id="hideAnim" layout="nodisplay"><script type="application/json">{
+                    "duration": "200ms",
+                    "fill": "both",
+                    "iterations": "1",
+                    "direction": "alternate",
+                    "animations": [{
+                        "selector": ".post-scroll",
+                        "keyframes": [{
+                            "opacity": "0",
+                            "visibility": "hidden",
+                            "transform": "scale(0.1)"
+                        }]
+                    }]
+                }</script></amp-animation><div class="post-scroll-marker"><amp-position-observer on="enter:hideAnim.start; exit:showAnim.start" layout="nodisplay"></amp-position-observer></div><button class="post-scroll" on="tap:top.scrollTo(duration=200)">&#8593;</button><footer class="bottom">Powered by Publii</footer><amp-sidebar id="navbar-sidebar" layout="nodisplay"><ul><li><a href="https://ggiallo28.github.io/blog/amp/" title="Home Page">Home</a></li><li><span title="Tags List">Categories</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://ggiallo28.github.io/blog/amp/blog/guide/" title="Step by Step Guides" target="_self" rel="Category Selection">Guide</a></li><li><a href="https://ggiallo28.github.io/blog/amp/blog/automation/" title="Automation is Awesome" target="_self" rel="Category Selection">Automation</a></li><li><a href="https://ggiallo28.github.io/blog/amp/blog/talks/" title="Public Speaking " target="_self" rel="Category Selection">Talks</a></li></ul></li><li><a href="http://gmucciolo.it/cv/" title="Curriculum Vitae">Resume</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="http://gmucciolo.it/cv/" title="Web Curriculum Vitae" target="_blank" rel="Curriculum Vitae Visualizer">Web View</a></li><li><a href="http://gmucciolo.it/cv/vitae.pdf" title="PDF Curriculum Vitae" target="_blank" rel="Curriculum Vitae Downloader">Download</a></li></ul></li><li><span title="Personal Information">About me</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://ggiallo28.github.io/blog/amp/authors/gianluigi-mucciolo/" title="Gianluigi Mucciolo In a Nutshell" target="_self" rel="Gianluigi Mucciolo Descriptions">Author</a></li><li><a href="https://www.linkedin.com/in/mucciolo91/" title="Linkedin Page" target="_self" rel="Social Link">LinkedIn</a></li><li><a href="https://github.com/ggiallo28" title="GitHub Page" target="_self" rel="Repository Link">GitHub</a></li><li><a href="https://ggiallo28.github.io/blog/amp/initial-commit/" title="Purpose of the Blog" target="_self" rel="Blog Description">Initial Commit</a></li></ul></li><li><span title="Language Selector">EN</span><ul class="navbar__submenu level-2" aria-hidden="true"><li class="language-it"><a href="https://ggiallo28.github.io/blog/amp/index.html" title="Language Italian" target="_self" rel="Language Italian">IT</a></li><li class="language-en"><a href="https://ggiallo28.github.io/blog/amp/index.html" title="Language English" target="_self" rel="Language English">EN</a></li></ul></li></ul></amp-sidebar><amp-analytics type="googleanalytics" id="analytics1"><script type="application/json">{
+            "vars": {
+                "account": "UA-81629524-3"
+            },
+            "triggers": {
+                "trackPageview": {
+                    "on": "visible",
+                    "request": "pageview"
+                }
+            }
+        }</script></amp-analytics></body></html>

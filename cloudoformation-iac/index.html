@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Infrastructure as Code CloudFormation - Gianluigi Mucciolo</title><meta name="description" content="Each topic must have a Post. Machine Learning, Reinforcement Learning, Amazon Web Services, Deep Learning, Terraform , Ansible, Docker, Infrastructure as Code."><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://ggiallo28.github.io/blog/cloudoformation-iac/"><link rel="amphtml" href="https://ggiallo28.github.io/blog/amp/cloudoformation-iac/"><link rel="alternate" type="application/atom+xml" href="https://ggiallo28.github.io/blog/feed.xml"><link rel="alternate" type="application/json" href="https://ggiallo28.github.io/blog/feed.json"><meta property="og:title" content="Infrastructure as Code CloudFormation"><meta property="og:image" content="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva1-2.png"><meta property="og:site_name" content="Augmentation is Awesome - Blog | Gianluigi Mucciolo "><meta property="og:description" content="Each topic must have a Post. Machine Learning, Reinforcement Learning, Amazon Web Services, Deep Learning, Terraform , Ansible, Docker, Infrastructure as Code."><meta property="og:url" content="https://ggiallo28.github.io/blog/cloudoformation-iac/"><meta property="og:type" content="article"><meta property="fb:app_id" content="2530408150622363"><meta name="twitter:card" content="summary"><meta name="twitter:site" content="@ggiallo28"><meta name="twitter:title" content="Infrastructure as Code CloudFormation"><meta name="twitter:description" content="Each topic must have a Post. Machine Learning, Reinforcement Learning, Amazon Web Services, Deep Learning, Terraform , Ansible, Docker, Infrastructure as Code."><meta name="twitter:image" content="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva1-2.png"><link rel="shortcut icon" href="https://ggiallo28.github.io/blog/media/website/android-chrome-512x512-2.png" type="image/x-icon"><link rel="shortcut icon" href="https://ggiallo28.github.io/blog/media/website/android-chrome-512x512-2.png" type="image/x-icon"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><style>:root{--body-font:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";--heading-font:var(--body-font);--logo-font:var(--body-font);--menu-font:var(--body-font)}</style><link rel="stylesheet" href="https://ggiallo28.github.io/blog/assets/css/style.css?v=28479eb7d8ecc6b9c8c6580965d9172b"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://ggiallo28.github.io/blog/cloudoformation-iac/"},"headline":"Infrastructure as Code CloudFormation","datePublished":"2020-06-20T16:06","dateModified":"2020-06-23T17:50","image":{"@type":"ImageObject","url":"https://ggiallo28.github.io/blog/media/posts/13/Diapositiva1-2.png","height":1080,"width":1920},"description":" A presentation at Amazon Web Services User Group Rome in June 2020 In this session, I will talk about&hellip;","author":{"@type":"Person","name":"Gianluigi Mucciolo"},"publisher":{"@type":"Organization","name":"Gianluigi Mucciolo"}}</script><script defer="defer">document.addEventListener('DOMContentLoaded', (event) => {
+  var local_domain = "gianluigi-mucciolo/preview"
+  if (window.location.hostname.length > 0){
+  	local_domain = window.location.hostname
+  }
+  if (localStorage.getItem("language") === null) {
+	localStorage.setItem("language", "EN");
+  }
+  
+  /* Logic */
+  var langs = document.getElementsByClassName('language');
+  Array.prototype.forEach.call(langs, function(el) {
+  	el.firstElementChild.innerText = localStorage.getItem("language");
+  });
+  
+  var conditions = ["/cv/", "search.html"];
+  var curr_location = window.location.href
+  var is_italian = localStorage.getItem("language") === "IT"
+  var contains_it = window.location.href.includes("/it/")
+  var href_location = curr_location.replace(local_domain, local_domain + "/it")
+  var to_skip = conditions.some(cond => curr_location.includes(cond))
+  if (!contains_it && is_italian && !to_skip){
+  	window.location.href = href_location
+  }
+  
+  if (is_italian) {
+    Array.prototype.forEach.call(document.links, function(el) {
+  	  var to_skip = conditions.some(cond => el.href.includes(cond))
+  	  if (el.href.includes(window.location.hostname) && !to_skip) {
+  		var contains_it = el.href.includes("/it/")
+  		var href_location = el.href.replace(local_domain, local_domain + "/it")
+  		if (!contains_it){
+			el.href = href_location
+  		}
+  	  }
+    });
+  	
+  	var show_snackbar = localStorage.getItem("show_snackbar");
+  	if (show_snackbar == "true") {
+  		var x = document.getElementById("snackbar");
+  		x.className = "show";
+  		setTimeout(function(){ 
+  			x.className = x.className.replace("show", ""); 
+  		}, 3000);
+  		localStorage.setItem("show_snackbar", false)
+  	}
+  }else{
+  	localStorage.setItem("show_snackbar", true)
+  }
+  
+  var en = document.getElementsByClassName('language-en');
+  Array.prototype.forEach.call(en, function(el) {
+    var as = el.getElementsByTagName("a")
+  	Array.prototype.forEach.call(as, function(el) { 
+		var en_location = curr_location.replace("/it/", "/");
+  		var el_contains_it = el.href.includes("/it/");
+  
+  		if (el_contains_it){
+  			el.href = en_location
+  		}else{
+  			el.href = curr_location
+  		}
+  
+        el.onclick = function() {
+            localStorage.setItem("language", "EN");
+        }
+  	});
+    if (localStorage.getItem("language") == "EN") {
+      el.style.display = 'none';
+    }
+  });
+
+  
+  var it = document.getElementsByClassName('language-it');
+  Array.prototype.forEach.call(it, function(el) {
+    var as = el.getElementsByTagName("a")
+  	Array.prototype.forEach.call(as, function(el) {
+		var it_location = curr_location.replace(local_domain, local_domain + "/it");
+  		var el_contains_it = el.href.includes("/it/");
+  
+  		if (el_contains_it){
+  			el.href = curr_location
+  		}else{
+  			el.href = it_location
+  		}
+  
+        el.onclick = function() {
+            localStorage.setItem("language", "IT");
+        }	
+  	});
+    if (localStorage.getItem("language") == "IT") {
+      el.style.display = 'none';
+    }
+  });
+});</script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81629524-3"></script><script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-81629524-3');</script></head><body><div id="snackbar">Traduzione da Amazon Translate</div><header class="header" id="js-header"><a href="https://ggiallo28.github.io/blog/" class="logo">Gianluigi Mucciolo</a><nav class="navbar js-navbar"><button class="navbar__toggle js-toggle" aria-label="Menu"><span class="navbar__toggle-box"><span class="navbar__toggle-inner">[MISSING TRANSLATION]</span></span></button><ul class="navbar__menu"><li class="home-index-location"><a href="https://ggiallo28.github.io/blog/" title="Home Page" target="_self" rel="Hope Page Selection">Home</a></li><li class="has-submenu"><span class="is-separator" title="Tags List" aria-haspopup="true">Categories</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://ggiallo28.github.io/blog/blog/guide/" title="Step by Step Guides" target="_self" rel="Category Selection">Guide</a></li><li><a href="https://ggiallo28.github.io/blog/blog/automation/" title="Automation is Awesome" target="_self" rel="Category Selection">Automation</a></li><li><a href="https://ggiallo28.github.io/blog/blog/talks/" title="Public Speaking " target="_self" rel="Category Selection">Talks</a></li></ul></li><li class="has-submenu"><a href="http://gmucciolo.it/cv/" title="Curriculum Vitae" target="_blank" rel="Curriculum Vitae Selector" aria-haspopup="true">Resume</a><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="http://gmucciolo.it/cv/" title="Web Curriculum Vitae" target="_blank" rel="Curriculum Vitae Visualizer">Web View</a></li><li><a href="http://gmucciolo.it/cv/vitae.pdf" title="PDF Curriculum Vitae" target="_blank" rel="Curriculum Vitae Downloader">Download</a></li></ul></li><li class="has-submenu"><span class="is-separator" title="Personal Information" aria-haspopup="true">About me</span><ul class="navbar__submenu level-2" aria-hidden="true"><li><a href="https://ggiallo28.github.io/blog/authors/gianluigi-mucciolo/" title="Gianluigi Mucciolo In a Nutshell" target="_self" rel="Gianluigi Mucciolo Descriptions">Author</a></li><li><a href="https://www.linkedin.com/in/mucciolo91/" title="Linkedin Page" target="_self" rel="Social Link">LinkedIn</a></li><li><a href="https://github.com/ggiallo28" title="GitHub Page" target="_self" rel="Repository Link">GitHub</a></li><li><a href="https://ggiallo28.github.io/blog/initial-commit/" title="Purpose of the Blog" target="_self" rel="Blog Description">Initial Commit</a></li></ul></li><li class="language has-submenu"><span class="is-separator" title="Language Selector" aria-haspopup="true">EN</span><ul class="navbar__submenu level-2" aria-hidden="true"><li class="language-it"><a href="https://ggiallo28.github.io/blog/index.html" title="Language Italian" target="_self" rel="Language Italian">IT</a></li><li class="language-en"><a href="https://ggiallo28.github.io/blog/index.html" title="Language English" target="_self" rel="Language English">EN</a></li></ul></li></ul></nav><div class="search"><div class="search__overlay js-search-overlay"><form action="https://ggiallo28.github.io/blog/search.html" class="search__form"><input class="search__input js-search-input" type="search" name="q" placeholder="search..." autofocus="autofocus"> <button class="search__submit">Search</button></form></div><button class="search__btn js-search-btn" aria-label="Search"><svg role="presentation" focusable="false" height="18" width="18"><use xlink:href="https://ggiallo28.github.io/blog/assets/svg/svg-map.svg#search"/></svg></button></div></header><main><div class="wrapper"><article class="post"><header class="post__header"><a href="https://ggiallo28.github.io/blog/blog/talks/" class="post__maintag">Talks</a><h1 class="post__title">Infrastructure as Code CloudFormation</h1><div class="post__meta"><div class="post__author">By <a href="https://ggiallo28.github.io/blog/authors/gianluigi-mucciolo/" class="invert" rel="author" title="Gianluigi Mucciolo">Gianluigi Mucciolo</a></div><time datetime="2020-06-20T16:06">20 June 2020</time><div class="post__comments"><svg aria-hidden="true"><title>Comments</title><use xlink:href="https://ggiallo28.github.io/blog/assets/svg/svg-map.svg#comments"/></svg> <a href="https://ggiallo28.github.io/blog/cloudoformation-iac/#comments" data-disqus-identifier="13" class="invert" rel="nofollow">0</a></div></div></header><figure class="post__featured-image"><img src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva1-2.png" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva1-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva1-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva1-2-md.png 768w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva1-2-lg.png 1200w" sizes="(min-width: 56.25em) 100vw, (min-width: 37.5em) 50vw, 100vw" loading="eager" height="1080" width="1920" alt=""><figcaption>A presentation at Amazon Web Services User Group Rome in June 2020</figcaption></figure><div class="post__inner"><div class="post__entry"><p class="align-center">A presentation at Amazon Web Services User Group Rome in June 2020</p><p>In this session, I will talk about AWS CloudFormation and its main features, advantages and disadvantages. I will discuss the YAML syntax, frameworks that run on top of AWS CloudFormation and last but not least, I'll talk about the ways you can extend CloudFormation functionality through Macros and Resource Providers.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva2-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva2-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva2-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva2-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 2</figcaption></figure><p>AWS CloudFormation is a service that uses Infrastructure as Code to provision and manages a collection of related AWS and third-party resources.&nbsp;</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva3-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva3-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva3-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva3-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 3</figcaption></figure><p>YAML syntax improves the readability of templates, this is a very common choice and is not a prerogative of AWS CloudFormation, Ansible and Kubernetes, for example, uses very similar syntax, moreover, the indentation is very familiar to Python programmers.</p><p>The JSON syntax instead is very useful for the automatic template generation thanks to&nbsp;<a href="https://jsonnet.org/" target="_blank">Jsonnet</a>, <a href="https://kapitan.dev/" target="_blank">Kapitan</a>,&nbsp;<a href="https://jinja.palletsprojects.com/en/2.11.x/" target="_blank">Jinja</a>&nbsp;or Python.</p><p>AWS provides the&nbsp;<a href="https://github.com/awslabs/aws-cfn-template-flip" target="_blank">cfn-template-flip</a>&nbsp;tool that allows you to flip JSON templates into YAML and vice versa along with the ability to perform optimizations,&nbsp;<a href="https://github.com/aws-cloudformation/cfn-python-lint" target="_blank">cfn-python-lint</a>&nbsp;can instead be used to perform syntax validation and template formatting.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva4-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva4-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva4-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva4-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 4</figcaption></figure><p>The syntax of a CloudFormation template is very simple, this makes the tool very easy to use, however, to get the best from CloudFormation you need to know how Amazon Web Services works. If you are just getting started you can go very fast with CloudFormation and spent more time understanding Amazon Web Services.&nbsp;</p><p>Knowing an agnostic cloud tool will not make you a multi-cloud DevOps, instead, knowing AWS CloudFormation can help you to understand AWS best practices.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva5-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva5-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva5-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva5-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 5</figcaption></figure><p>CloudFormation uses a declarative syntax. This means that everything in your template is a declaration of what should be in CloudFormation's state. Since you use resource attributes to declare your infrastructure you must store your conﬁguration in it.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva8-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva8-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva8-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva8-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 6</figcaption></figure><p>When you launch an instance in Amazon EC2, you have the option of passing user data to the virtual machine to perform&nbsp;automated configuration tasks, but it is hard to declare a configuration in it because you will end on in doing a lot of shell programming which is not as reliable as conﬁguration&nbsp;management should be, instead AWS::CloudFormation::Init can be used.<br></p><p>AWS::CloudFormation::Init is a way to provide&nbsp;metadata on an Amazon EC2 instance for the cfn-init helper script.&nbsp;The configuration is separated into sections.&nbsp;The cfn-init helper script processes the configuration sections&nbsp;in the following order: packages, groups, users, sources, files, commands, and then services but you can change the default order by using&nbsp;configsets.</p><p>A configset block consists of a configuration that specifies a set of actions to be performed on the machine, you can have many configset in the same init-resource. These include:&nbsp;</p><ul><li><span style="color: var(--eb-text-primary-color); font-family: var(--font-base); font-size: 1em; font-weight: var(--font-weight-normal);"><strong>packages</strong>:&nbsp; to download and install pre-packaged applications and components.</span><br></li><li><span style="color: var(--eb-text-primary-color); font-family: var(--font-base); font-size: 1em; font-weight: var(--font-weight-normal);"><strong>groups</strong>: to create Linux/UNIX groups and to assign group IDs.<br></span></li><li><span style="color: var(--eb-text-primary-color); font-family: var(--font-base); font-size: 1em; font-weight: var(--font-weight-normal);"><strong>users</strong>: to create Linux/UNIX users on the EC2 instance.<br></span></li><li><span style="color: var(--eb-text-primary-color); font-family: var(--font-base); font-size: 1em; font-weight: var(--font-weight-normal);"><strong>sources</strong>: to download an archive file and unpack it in a target directory on the EC2 instance.&nbsp;</span></li><li><strong>files</strong>: to create files on the EC2 instance.</li><li><strong>commands</strong>: to execute commands on the EC2 instance.<br></li><li><strong>services</strong>: to define which services should be enabled or disabled at launch.<br></li></ul><p>Let's try to make comparisons. User data give you greater control but for the file to parse as valid JSON/YAML code, any special characters such as double quotes must be escaped within the template, on the other hand, AWS::CloudFormation::Init is easiest to read, roll back automatically on failure, but give you less control.&nbsp;User data script is executed only when the virtual machine is&nbsp;launched while&nbsp;cfn-init can upgrade the machine without recreating the resource.<br></p><p>The AWS::CloudFormation::Init block can be specified in the Metadata field in a virtual machine definition, UserData can be specified in the Properties field. You can provide both AWS::CloudFormation::Init and UserData at the same time.</p><pre class="line-numbers skip_translate code language-yaml"><code>Resources: 
+  Ec2Instance: 
+    Type: AWS::EC2::Instance
+    Metadata: 
+      AWS::CloudFormation::Init: 
+        config: 
+          packages: 
+            :
+          groups: 
+            :
+          users: 
+            :
+          sources: 
+            :
+          files: 
+            :
+          commands: 
+            :
+          services: 
+            :
+    Properties: 
+      UserData:
+        Fn::Base64:
+            !Sub |
+              #!/bin/bash -x
+              # Signal the status from instance
+              /opt/aws/bin/cfn-signal -e $? -r "Build Process Complete" '${WaitHandle}'
+      ImageId: 'ami-1234'</code></pre><p>AWS::CloudFormation::WaitCondition can be used when you need to coordinate stack resource creation with configuration actions that are external to the stack creation or to track the status of a configuration process. You need to create also a WaitConditionHandle that returns a pre-signed URL you can use with cfn-signal to notify execution state to CloudFormation.</p><pre class="line-numbers skip_translate language-yaml"><code>WaitHandle: 
+  Type: AWS::CloudFormation::WaitConditionHandle
+  Properties: {}
+  
+WaitCondition: 
+  Type: AWS::CloudFormation::WaitCondition
+  DependsOn: 'Ec2Instance'
+  Properties: 
+    Handle: 
+      Ref: "WaitHandle"
+    Timeout: '300'
+</code></pre><p>Parameters allow you to create many stacks from the same template. A template is a specification of the AWS resources to be provisioned, a stack instead is a collection of AWS resources that have been created from a template. You can write a generic template and control which resources to create into a stack by using parameters. For example, you can enable the high availability in production and disable it in the development environment.</p><p>Below is an example of an input parameter to a template. You can define constraints over length and type, you can use regular expressions to validate the input value.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva6-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva6-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva6-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva6-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 7</figcaption></figure><p>Rules allow you to define constraints over different parameters, these constraints can also be used to define best practices.</p><p>In the below example we can recognize two rules, one check that m1.small machine is used in the test environment, another ensures that m1.large machine is used in production.</p><p>Templates in which best practices are defined can be made available as products in AWS Catalog. This allows developers to create a compliant infrastructure, you can prevent any change to the template by using IAM policies.</p><pre class="line-numbers skip_translate language-yaml"><code>Rules:
+  testInstanceType:
+    RuleCondition:
+      Fn::Equals:
+      - Ref: Environment
+      - test
+    Assertions:
+    - Assert:
+        Fn::Contains:
+        - - m1.small
+        - Ref: InstanceType
+      AssertDescription: For the test environment, the instance type must be m1.small
+  prodInstanceType:
+    RuleCondition:
+      Fn::Equals:
+      - Ref: Environment
+      - prod
+    Assertions:
+    - Assert:
+        Fn::Contains:
+        - - m1.large
+        - Ref: InstanceType
+      AssertDescription: For the prod environment, the instance type must be m1.large</code></pre><p>Outputs are the return values of your CloudFormation template, they can be exported and then used in another template. The exported name must be unique in the region, it can be imported into any CloudFormation template of the same region. When you use ImportValue intrinsic function only the value is imported not the whole state.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva7.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva7-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva7-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva7-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 8</figcaption></figure><p>Mappings allow you to create generic templates, and define a complex configuration using a key-value map. For example, you can have a region-independent template as it is shown in the below slide. As you know each AMI has an identifier valid in a given region, Mappings allows you to specify for each region which AMI id to use.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva9-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva9-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva9-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva9-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 9</figcaption></figure><p>CloudFormation fully manages the infrastructure state, it manages concurrent state changes and the resources creation, update and deletion.</p><p>You can create change-sets and have a full overview of the operations that will be performed during the execution of the template. In case of an error, the system rollbacks the infrastructure to the last working state.</p><p>CloudFormation has a Drift Detection feature that gives you the capability to discovery out-of-band changes in your infrastructure, it does not perform reconciliation.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva10-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva10-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva10-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva10-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 10</figcaption></figure><p>CloudFormation has a very large ecosystem, there are many tools and framework build on top of CloudFormation. Also, thanks to AWS's strong focus on backwards compatibility there are many ready-to-use CloudFormation templates, so you rarely have to start from scratch. This greatly reduces time to market.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva11-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva11-2-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva11-2-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva11-2-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 11</figcaption></figure><p>StackSets feature gives you the capability to create, update, or delete stacks across multiple accounts and regions with a single operation. This feature is useful for those organizations that need to manage hundreds of accounts, to deploy global infrastructures or disaster recovery.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva12.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva12-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva12-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva12-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 12</figcaption></figure><p>Below are the advantages and disadvantages of using CloudFormation:</p><p>Advantages:</p><ul><li><strong>stack sets</strong>: allow you to have multi-account and multi-region deployments;</li><li><strong>ui debugging</strong>: you can use the GUI to perform debugging activities;</li><li><strong>runs in the cloud</strong>: operations are performed even in case of network issues;</li><li><strong>ecosystem</strong>: you can use many tools and frameworks to meet your needs;</li><li><strong>tons of examples</strong>: you will never start from scratch;</li><li><strong>cross-referencing</strong>: you can reference value without to import the whole state;</li><li><strong>custom resources</strong>: you can extend CloudFormation capabilities with AWS Lambda;</li><li><strong>rollback</strong>: restore the last working state when an error occurs, improves resilience and reduces down-time;</li><li><strong>macros</strong>: allows you to define transformations that can be applied to the template;</li><li><strong>resource provider</strong>: allows you to create third-party resources.<br></li></ul><p>Disadvantages:</p><ul><li><strong>confused cli</strong>: Wrappers/Makefile are usually used to avoid commands with many parameters, you can also use the GUI or SDK to deploy your stacks;</li><li><strong>no reconciliation</strong>: although it gives you the ability to detect changes out of state, it does not restore them;</li><li><strong>no open-source</strong>: you cannot contribute to CloudFormation's core capability, it has a plug-and-play capability that gives you the ability to extend the functionality by using AWS Lambda functions;</li><li><strong>no modules</strong>: you can import existing templates from Amazon S3 and create a Nested Stack, but you cannot import a template as a module from a git repository;</li><li><strong>verbose</strong>: the result template has many repetitions, this because of missing modules;</li><li><strong>no programmable</strong>: you cannot use software constructs, it is more Infrastructure as Text than Infrastructure as Code;<br></li></ul><p>AWS Specific vs Not Multi-Cloud. CloudFormation is not generally used as a multi-cloud tool, although you can use it as such. I think there are advantages and disadvantages to using a multi-cloud tool or native-cloud one.</p><p>Native-tools have better integration with the system for which are designed - CloudFormation, for example, is integrated with others services such as AWS Catalog, AWS Lambda, you can ask AWS Support to inspect your templates - on the other hand, a multi-cloud tool allows you to design the whole infrastructure by avoiding Frankenstein solution. I am therefore very excited about the announcement of CloudFormation Providers and third-party resources support.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva13.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva13-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva13-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva13-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 13</figcaption></figure><p>The advantages and disadvantages in the previous slide are from the IaC community, actually thanks to features such as custom resources, macros and resource provider many of the drawbacks no longer apply, or almost apply.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva14.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva14-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva14-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva14-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 14</figcaption></figure><p>Macros enable you to perform custom processing on templates. First, you need to create the macro itself, and then you can use the macro to perform your transformations.</p><p>To create a macro definition, you need to define the following:</p><pre class="line-numbers skip_translate language-yaml"><code>Transform: AWS::Serverless-2016-10-31
+
+Resources:
+  MacroFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Runtime: python3.6
+      CodeUri: source/
+      Handler: macro.handler
+      Role: !GetAtt TransformExecutionRole.Arn
+      Timeout: 300
+
+  Macro:
+    Type: AWS::CloudFormation::Macro
+    Properties:
+      Name: MyCustomMacro
+      FunctionName: !GetAtt MacroFunction.Arn</code></pre><p>Whereas you can see there is an AWS Lambda function&nbsp;to perform the template processing and a resource of type AWS::CloudFormation::Macro, which enables users to call the Lambda function from within AWS CloudFormation templates.</p><p>If you need to process a section, or snippet, of a template, reference the macro in a Fn::Transform function located relative to the template content you want to transform, instead if you need process an entire template, reference the macro in the Transform section of the template.&nbsp;</p><p>The previous snipped for example uses AWS::Serverless-2016-10-31 transform to create MyCustomMacro.<br></p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva15.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva15-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva15-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva15-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 15</figcaption></figure><p>CloudFormation does not have native support for modules, that's why I have created the Template Macro.</p><p>Template Macro adds the ability to create CloudFormation resources from existing templates, you can reuse your configurations and manage a group of related resources as if they were a single resource. Check the&nbsp;<a href="https://github.com/ggiallo28/aws-cloudformation-macros/blob/master/Template/README.md" target="_blank">Template Macro docs</a>&nbsp;if you need further informations.&nbsp;</p><p>Below a Virtual Private Cloud with two private and public Subnets is created, together with a NAT Gateway, NACLs, Security Groups, an Internet Gateway, Route Tables and so on, all this in a single resource.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva16.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva16-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva16-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva16-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 16</figcaption></figure><p>CloudFormation does not have by default the capability to use any software constructs, that's why I have created the Troposphere Macro.</p><p>Troposphere Macro adds the ability to define your infrastructure by using Python language in a CloudFormation template, you can use if-then-else, for-loops and so on. Check <a href="https://github.com/ggiallo28/troposphere/blob/macro/macro/README.md" target="_blank">Troposphere Macro docs</a> if you need further information.&nbsp;</p><p>In the below example four virtual machines are created by looping over a list of names.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva17.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva17-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva17-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva17-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 17</figcaption></figure><p>There are more AWS CloudFormation macros you can use, please check <a href="https://github.com/aws-cloudformation/aws-cloudformation-macros/blob/master/README.md" target="_blank">Macro Repository</a>&nbsp;if&nbsp;you need further information.</p><ul><li><strong>Count</strong> macro allows you to specify multiple resources of the same type.</li><li><strong>PyPlate</strong> macro allows you to run arbitrary python code in your CloudFormation templates.<br></li><li><strong>Boto3</strong> macro adds the ability to call AWS API using boto3.<br></li><li><strong>AWS::Serverless</strong> is a macro to use <a href="https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/what-is-sam.html" target="_blank">AWS Serverless Application Model (AWS SAM)</a>.<br></li></ul><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva18.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva18-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva18-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva18-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 18</figcaption></figure><p>By using the AWS CloudFormation Registry, you can submit, discover, and manage resource providers,&nbsp;it can be used to manage third party resources in the same way as native AWS resource providers.</p><p>To create third-party resources in your infrastructure you need to execute cfn-init-command and provide the name of your resource type, then it asks for the language to use in code generation and finally, it initializes the project by using docker environment.</p><p>Resource providers are treated as first-class citizens within CloudFormation; you can use CloudFormation capabilities to create, provision, and manage these custom resources in a safe and repeatable manner, just as you would any AWS resource.&nbsp;</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva19.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva19-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva19-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva19-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 19</figcaption></figure><p>If you have any questions please use the comments section.</p><figure class="post__image post__image--center"><img loading="lazy" src="https://ggiallo28.github.io/blog/media/posts/13/Diapositiva20.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva20-xs.png 300w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva20-sm.png 480w, https://ggiallo28.github.io/blog/media/posts/13/responsive/Diapositiva20-md.png 768w" height="1080" width="1920" alt=""><figcaption>Slide 20</figcaption></figure></div><footer><p class="post__last-updated">This article was updated on 23 June 2020</p><div class="post__tags-share"><ul class="post__tag"><li><a href="https://ggiallo28.github.io/blog/blog/talks/">Talks</a></li></ul><aside class="post__share"><a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fggiallo28.github.io%2Fblog%2Fcloudoformation-iac%2F" class="js-share facebook" aria-label="Share with Facebook" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://ggiallo28.github.io/blog/assets/svg/svg-map.svg#facebook"/></svg> </a><a href="https://twitter.com/share?url=https%3A%2F%2Fggiallo28.github.io%2Fblog%2Fcloudoformation-iac%2F&amp;via=ggiallo28&amp;text=Infrastructure%20as%20Code%20CloudFormation" class="js-share twitter" aria-label="Share with Twitter" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://ggiallo28.github.io/blog/assets/svg/svg-map.svg#twitter"/></svg> </a><a href="http://www.linkedin.com/shareArticle?url=https%3A%2F%2Fggiallo28.github.io%2Fblog%2Fcloudoformation-iac%2F&amp;title=Infrastructure%20as%20Code%20CloudFormation" class="js-share linkedin" aria-label="Share with LinkedIn" rel="nofollow noopener noreferrer"><svg><use xlink:href="https://ggiallo28.github.io/blog/assets/svg/svg-map.svg#linkedin"/></svg></a></aside></div><div class="post__bio author"><img src="https://ggiallo28.github.io/blog/media/website/gm.png" loading="lazy" alt="Gianluigi Mucciolo" class="author__avatar"><div><h3 class="h6 author__name"><a href="https://ggiallo28.github.io/blog/authors/gianluigi-mucciolo/" class="invert" title="Gianluigi Mucciolo">Gianluigi Mucciolo</a></h3><p class="author__desc">I operate on AWS as a Cloud Engineer and Trainer. I have experience in Agile and DevOps. Artificial Intelligence and Big Data enthusiast.</p></div></div><nav class="post__nav"><div class="post__nav__prev"><a class="post__nav__link" href="https://ggiallo28.github.io/blog/create-a-personal-website/" rel="prev">Previous Post<h3 class="h6">Create a Personal Website</h3></a></div></nav></footer></div></article><div class="comments post__inner" id="comments"><h3 class="h5">Comments</h3><div id="disqus_thread"></div><script>var disqus_config = function () {
+                    this.page.url = '';
+            		this.page.identifier = '';
+                    this.page.title = ' Infrastructure as Code CloudFormation - Gianluigi Mucciolo ';
+                };
+            
+                var disqus_loaded = false;
+            
+                function publiiLoadDisqus() {
+                    if(disqus_loaded) {
+                        return false;
+                    }
+            
+                    var top = document.getElementById('disqus_thread').offsetTop;
+            
+                    if (!disqus_loaded && (window.scrollY || window.pageYOffset) + window.innerHeight > top) {
+                        disqus_loaded = true;
+            
+                        (function () {
+                            var d = document, s = d.createElement('script');
+                            s.src = 'https://www-freeme-name.disqus.com/embed.js';
+                            s.setAttribute('data-timestamp', +new Date());
+                            (d.head || d.body).appendChild(s);
+                        })();
+                    }
+                }
+            
+                publiiLoadDisqus();
+            
+                window.onscroll = function() {
+                    publiiLoadDisqus();
+                };</script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript></div></div></main><footer class="footer"><div class="footer__copyright">&copy; 2020 Powered by Publii Static CMS</div></footer><script>window.publiiThemeMenuConfig = {    
+      mobileMenuMode: 'sidebar',
+      animationSpeed: 300,
+      submenuWidth: 'auto',
+      doubleClickTime: 500,
+      mobileMenuExpandableSubmenus: true, 
+      relatedContainerForOverlayMenuSelector: '.navbar',
+   };</script><script defer="defer" src="https://ggiallo28.github.io/blog/assets/js/scripts.min.js?v=c4313e7a09cf8b4feb540ef68f93752c"></script><script>var images = document.querySelectorAll('img[loading]');
+
+      for (var i = 0; i < images.length; i++) {
+         if (images[i].complete) {
+               images[i].classList.add('is-loaded');
+         } else {
+               images[i].addEventListener('load', function () {
+                  this.classList.add('is-loaded');
+               }, false);
+         }
+      }</script><script id="dsq-count-scr" src="https://www-freeme-name.disqus.com/count.js" async></script></body></html>
