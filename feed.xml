@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <title>Gianluigi Mucciolo</title>
-    <link href="https://freeme.name/feed.xml" rel="self" />
-    <link href="https://freeme.name" />
+    <link href="https://www.freeme.name/feed.xml" rel="self" />
+    <link href="https://www.freeme.name" />
     <updated>1970-01-01T01:00:00+01:00</updated>
     <author>
         <name>Gianluigi Mucciolo</name>
     </author>
-    <id>https://freeme.name</id>
+    <id>https://www.freeme.name</id>
 
     <entry>
         <title>Infrastructure as Code CloudFormation</title>
         <author>
             <name>Gianluigi Mucciolo</name>
         </author>
-        <link href="https://freeme.name/cloudoformation-iac/"/>
-        <id>https://freeme.name/cloudoformation-iac/</id>
+        <link href="https://www.freeme.name/cloudoformation-iac/"/>
+        <id>https://www.freeme.name/cloudoformation-iac/</id>
             <category term="Talks"/>
 
-        <updated>2020-06-23T23:08:59+02:00</updated>
+        <updated>2020-06-23T23:10:02+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freeme.name/media/posts/13/Diapositiva1-2.png" alt="" />
+                        <img src="https://www.freeme.name/media/posts/13/Diapositiva1-2.png" alt="" />
                      A presentation at Amazon Web Services User Group Rome in June 2020 In this session, I will talk about&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://freeme.name/media/posts/13/Diapositiva1-2.png" alt="" />
+                    <img src="https://www.freeme.name/media/posts/13/Diapositiva1-2.png" alt="" />
                 
   <p class="align-center">
     A presentation at Amazon Web Services User Group Rome in June 2020
@@ -38,7 +38,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva2-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva2-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva2-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva2-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva2-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva2-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva2-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva2-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 2</figcaption>
     </figure>
 
@@ -47,7 +47,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva3-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva3-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva3-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva3-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva3-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva3-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva3-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva3-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 3</figcaption>
     </figure>
 
@@ -64,7 +64,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva4-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva4-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva4-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva4-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva4-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva4-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva4-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva4-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 4</figcaption>
     </figure>
 
@@ -77,7 +77,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva5-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva5-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva5-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva5-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva5-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva5-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva5-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva5-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 5</figcaption>
     </figure>
 
@@ -86,7 +86,7 @@
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva8-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva8-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva8-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva8-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva8-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva8-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva8-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva8-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 6</figcaption>
     </figure>
 
@@ -167,7 +167,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva6-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva6-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva6-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva6-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva6-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva6-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva6-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva6-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 7</figcaption>
     </figure>
 
@@ -211,7 +211,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva7.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva7-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva7-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva7-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva7.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva7-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva7-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva7-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 8</figcaption>
     </figure>
 
@@ -220,7 +220,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva9-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva9-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva9-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva9-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva9-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva9-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva9-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva9-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 9</figcaption>
     </figure>
 
@@ -237,7 +237,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva10-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva10-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva10-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva10-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva10-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva10-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva10-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva10-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 10</figcaption>
     </figure>
 
@@ -246,7 +246,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva11-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva11-2-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva11-2-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva11-2-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva11-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva11-2-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva11-2-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva11-2-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 11</figcaption>
     </figure>
 
@@ -255,7 +255,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva12.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva12-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva12-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva12-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva12.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva12-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva12-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva12-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 12</figcaption>
     </figure>
 
@@ -288,7 +288,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva13.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva13-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva13-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva13-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva13.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva13-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva13-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva13-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 13</figcaption>
     </figure>
 
@@ -297,7 +297,7 @@ WaitCondition:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva14.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva14-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva14-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva14-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva14.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva14-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva14-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva14-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 14</figcaption>
     </figure>
 
@@ -339,7 +339,7 @@ Resources:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva15.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva15-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva15-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva15-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva15.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva15-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva15-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva15-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 15</figcaption>
     </figure>
 
@@ -356,7 +356,7 @@ Resources:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva16.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva16-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva16-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva16-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva16.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva16-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva16-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva16-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 16</figcaption>
     </figure>
 
@@ -373,7 +373,7 @@ Resources:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva17.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva17-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva17-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva17-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva17.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva17-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva17-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva17-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 17</figcaption>
     </figure>
 
@@ -386,7 +386,7 @@ Resources:
   </ul>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva18.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva18-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva18-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva18-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva18.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva18-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva18-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva18-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 18</figcaption>
     </figure>
 
@@ -403,7 +403,7 @@ Resources:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva19.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva19-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva19-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva19-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva19.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva19-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva19-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva19-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 19</figcaption>
     </figure>
 
@@ -412,7 +412,7 @@ Resources:
   </p>
 
     <figure class="post__image post__image--center">
-      <img loading="lazy" src="https://freeme.name/media/posts/13/Diapositiva20.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/13/responsive/Diapositiva20-xs.png 300w ,https://freeme.name/media/posts/13/responsive/Diapositiva20-sm.png 480w ,https://freeme.name/media/posts/13/responsive/Diapositiva20-md.png 768w"  height="1080" width="1920" alt="" />
+      <img loading="lazy" src="https://www.freeme.name/media/posts/13/Diapositiva20.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/13/responsive/Diapositiva20-xs.png 300w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva20-sm.png 480w ,https://www.freeme.name/media/posts/13/responsive/Diapositiva20-md.png 768w"  height="1080" width="1920" alt="" />
       <figcaption>Slide 20</figcaption>
     </figure>
             ]]>
@@ -423,20 +423,20 @@ Resources:
         <author>
             <name>Gianluigi Mucciolo</name>
         </author>
-        <link href="https://freeme.name/create-a-personal-website/"/>
-        <id>https://freeme.name/create-a-personal-website/</id>
+        <link href="https://www.freeme.name/create-a-personal-website/"/>
+        <id>https://www.freeme.name/create-a-personal-website/</id>
             <category term="Guide"/>
 
-        <updated>2020-06-23T23:08:59+02:00</updated>
+        <updated>2020-06-23T23:10:02+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" />
+                        <img src="https://www.freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" />
                     The Serverless infrastructure behind a static web site. Do you want make it yours? You can start from here. Having&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" />
+                    <img src="https://www.freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" />
                 <p>The Serverless infrastructure behind a static web site. Do you want make it yours? You can start from here. </p>
 <hr>
 <h4 id="0887" class="fs ft ct bj fu b fv fw fx fy fz ga gb gc gd ge gf gg gh gi gj gk">Why you need a personal website.</h4>
@@ -448,7 +448,7 @@ Resources:
 <h4>Decision focused on two alternatives.</h4>
 <p>A Personal Website can be created in many different ways, but in most of cases you need a specialized technical knowledge, that's why a content management system, most often referred to as a CMS, is needed to allow individuals and businesses to edit, manage, and maintain existing website pages in a single interface.</p>
 <p>Until today WordPress is the most popular CMS, so I started doing some research to figure out best practices to deploy a WordPress infrastructure on AWS, and I have found that something like this is needed:</p>
-<figure class="post__image" ><img loading="lazy" src="https://freeme.name/media/posts/10/wordpress-on-aws-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/10/responsive/wordpress-on-aws-2-xs.png 300w ,https://freeme.name/media/posts/10/responsive/wordpress-on-aws-2-sm.png 480w ,https://freeme.name/media/posts/10/responsive/wordpress-on-aws-2-md.png 768w"  alt="WordPress: Best Practices on AWS" width="1562" height="746">
+<figure class="post__image" ><img loading="lazy" src="https://www.freeme.name/media/posts/10/wordpress-on-aws-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/10/responsive/wordpress-on-aws-2-xs.png 300w ,https://www.freeme.name/media/posts/10/responsive/wordpress-on-aws-2-sm.png 480w ,https://www.freeme.name/media/posts/10/responsive/wordpress-on-aws-2-md.png 768w"  alt="WordPress: Best Practices on AWS" width="1562" height="746">
 <figcaption ><a href="https://aws.amazon.com/it/blogs/architecture/wordpress-best-practices-on-aws/">WordPress: Best Practice on AWS</a><a></a></figcaption>
 </figure>
 <p>The proposed solution looked to be very expensive, there are bunches of servers here, many of them are useless, at least for my use-case.</p>
@@ -471,7 +471,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <h5>Part III: Select a Theme for your Blog.</h5>
 <p>You can get your Publii Theme from the <a href="https://marketplace.getpublii.com/">marketplace page</a>. There are many templates you can use, more will come in the future, many of them are free to use. </p>
 <p>Once you have selected your favorite theme, hit download to get the zip file. To install a new theme navigate to the themes page by clicking on the three dots in the top-right of the Publii client, then clicking the themes option and Install theme as it is shown in the image.</p>
-<figure class="post_center_image" ><img loading="lazy" src="https://freeme.name/media/posts/10/Schermata-2020-06-08-alle-22.56.41.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-xs.png 300w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-sm.png 480w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-md.png 768w"  alt="Install a Publii Theme" width="1562" height="746">
+<figure class="post_center_image" ><img loading="lazy" src="https://www.freeme.name/media/posts/10/Schermata-2020-06-08-alle-22.56.41.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-xs.png 300w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-sm.png 480w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-22.56.41-md.png 768w"  alt="Install a Publii Theme" width="1562" height="746">
 <figcaption >Install a Publii Theme</figcaption>
 </figure>
 <p>You can click on "Get more themes" to be redirected on the marketplace page.</p>
@@ -479,7 +479,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <p>To begin creating a post you can click on the posts option in the left-sidebar to be taken to the posts screen. The first time you do this you'll be presented with a choice of three different already build-in editors that you can use to create your first post; a Block Editor, a Markdown Editor, and a WYSIWYG Editor. </p>
 <figure class="post_center_image"><img loading="lazy"  src="https://getpublii.com/docs/media/posts/41/editors.svg" data-is-external-image="true"  alt="Initial post screen with choice of editors"></figure>
 <p>Every time you create a new post you can choose which editor to use, each one has its advantages and disadvantages. For example, I use Block Editor to share slides about a speech, Markdown Editor to create a README description of a project, and WYSIWYG Editor to create a discursive post like this one.</p>
-<figure class="post_center_image post__image--center" ><img loading="lazy" src="https://freeme.name/media/posts/10/Schermata-2020-06-23-alle-00.10.01-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-xs.png 300w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-sm.png 480w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-md.png 768w"  alt="">
+<figure class="post_center_image post__image--center" ><img loading="lazy" src="https://www.freeme.name/media/posts/10/Schermata-2020-06-23-alle-00.10.01-2.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-xs.png 300w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-sm.png 480w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-23-alle-00.10.01-2-md.png 768w"  alt="">
 <figcaption >Example of WYSIWYG Editor</figcaption>
 </figure>
 <p>Each post has its configuration. You can select the Featured image, add tags, update the SEO configuration, together with other options like having or not the comments section.</p>
@@ -488,7 +488,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <p>Publii includes support for traditional FTP and SFTP server, as well as for multiple Cloud-Hosting Solutions, there is also an option for Manual Deployment, which exports the website files to your local machine.</p>
 <p>The remote server configuration is related on your selected option, I used Amazon S3 on Amazon Web Services. </p>
 <p>When you are ready to go live you'll just need to hit the "Sync Your Website" button in the bottom-left of the Publii app. After that you have basically done.</p>
-<figure class="post_center_image"><img loading="lazy"  src="https://freeme.name/media/posts/10/Schermata-2020-06-08-alle-23.00.57.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-xs.png 300w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-sm.png 480w ,https://freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-md.png 768w"  alt="" width="2880" height="1800"></figure>
+<figure class="post_center_image"><img loading="lazy"  src="https://www.freeme.name/media/posts/10/Schermata-2020-06-08-alle-23.00.57.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-xs.png 300w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-sm.png 480w ,https://www.freeme.name/media/posts/10/responsive/Schermata-2020-06-08-alle-23.00.57-md.png 768w"  alt="" width="2880" height="1800"></figure>
 <h5>Part VI: (Optional) Make your configuration portable.</h5>
 <p>If you plan to work at the same website from different workstation you can synchronize your configuration with Dropbox. Here you can found the <a href="https://getpublii.com/docs/publii-on-multiple-computers-via-dropbox.html" target="_blank" rel="noopener noreferrer">official documentation</a> that instructs you on how to do this. </p>
 <p>After installation Publii will store its files into a location on your computer, which will differ depending on whether you are using Windows, Linux or MacOS:</p>
@@ -514,7 +514,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <li>Have an extensible solution.</li>
 </ul>
 <p>A diagram of the proposed solution is presented below:</p>
-<figure class="post_center_image"><img loading="lazy"  src="https://freeme.name/media/posts/10/StaticWebSite.svg" alt="" width="654" height="641"></figure>
+<figure class="post_center_image"><img loading="lazy"  src="https://www.freeme.name/media/posts/10/StaticWebSite.svg" alt="" width="654" height="641"></figure>
 <h5>There Environments</h5>
 <p>There are three environments: development, stage, and production.</p>
 <p>Development environment is on my computer. Here is where I do all of my code updates and perform preliminary testing. I release the code when it works locally.</p>
@@ -541,7 +541,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <p>Here you can find the <a href="https://github.com/ggiallo28/publii-website/tree/master/cloudformation/hosting">CloudFormation template</a> related to the Publii infrastructure, it creates Amazon S3 Buckets, AWS Lambda functions, and Amazon CloudFront distribution, and the Record Sets in Amazon Route 53. I have created a Makefile that you can use for deploy. Before doing <code>make deploy ENV=stage</code> or <code>make deploy ENV=production</code> you have to update parameters file in envs folder. You must already have your domain name, an HTTPS Certificate in Nord Virginia Region, and an Amazon Translate Custom Terminology.</p>
 <p>Personal Resume is created using a Jekyll Template, you can find it in the <a href="https://github.com/ggiallo28/online-cv" target="_blank" rel="noopener noreferrer">GitHub Repository</a>. I have created a Makefile that you can use for deploy. Before doing <code>make pipeline</code> you have to update BucketNames parameters, you can use those that are created during Publii infrastructure creation, and Sites parameters in the cloudformation.json file.</p>
 <h4>How much it cost</h4>
-<figure class="post_center_image"><img loading="lazy"  src="https://freeme.name/media/posts/10/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-xs.jpg 300w ,https://freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-sm.jpg 480w ,https://freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-md.jpg 768w"  alt="" width="533" height="400"></figure>
+<figure class="post_center_image"><img loading="lazy"  src="https://www.freeme.name/media/posts/10/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-xs.jpg 300w ,https://www.freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-sm.jpg 480w ,https://www.freeme.name/media/posts/10/responsive/us-dollar-bills-illustration-545864205-57aa68603df78cf459d43e43-md.jpg 768w"  alt="" width="533" height="400"></figure>
 <p>In the proposed infrastructure these are the main cost items:</p>
 <ul>
 <li>CI/CD Pipeline, consisting of Code Pipeline and Code Build, cost about 1$/month only if the pipeline is executed, otherwise the cost is zero if the pipeline is never executed in a month.</li>
@@ -561,20 +561,20 @@ Publii is a static-website-building tool for every skill level, from beginner to
         <author>
             <name>Gianluigi Mucciolo</name>
         </author>
-        <link href="https://freeme.name/do-you-automate/"/>
-        <id>https://freeme.name/do-you-automate/</id>
+        <link href="https://www.freeme.name/do-you-automate/"/>
+        <id>https://www.freeme.name/do-you-automate/</id>
             <category term="Automation"/>
 
-        <updated>2020-06-23T23:08:59+02:00</updated>
+        <updated>2020-06-23T23:10:02+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg" alt="" />
+                        <img src="https://www.freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg" alt="" />
                     Do you like the assembly line? Do you like to perform repetitive tasks? Automation is going to cause unemployment. Really?&hellip;
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg" alt="" />
+                    <img src="https://www.freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg" alt="" />
                 <p>Do you like the assembly line? Do you like to perform repetitive tasks? Automation is going to cause unemployment. Really?  </p>
 <hr>
 <p>Automation is the technology by which a process is performed with minimal human assistance. When leaders describe how it will affect us, <span style="color: var(--text-editor-body-color); font-family: var(--font-base); font-size: inherit; font-weight: var(--font-weight-normal);">predictions typically fall into one of two camps. Optimists think that machines will bring human to do higher-value activities, while pessimists predict massive unemployment.</span></p>
@@ -599,12 +599,12 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <p>Today the primary limitation is the cost-effectiveness of automating a solution, so if automation increases a lot the cost of the operation you should not automate it. </p>
 <p>Operations that require manual intervention or validation by the human, operation in which adapting inputs to structured formats is very hard, should not be automated as the return on investment for the automation will always be less.</p>
 <p>Very unstable and prone to changes operations should not be automated because they are very hard to test.</p>
-<figure class="post_center_image"><img loading="lazy"  src="https://freeme.name/media/posts/9/amleto_con_teschio.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/9/responsive/amleto_con_teschio-xs.jpg 300w ,https://freeme.name/media/posts/9/responsive/amleto_con_teschio-sm.jpg 480w ,https://freeme.name/media/posts/9/responsive/amleto_con_teschio-md.jpg 768w"  alt="" width="489" height="406"></figure>
+<figure class="post_center_image"><img loading="lazy"  src="https://www.freeme.name/media/posts/9/amleto_con_teschio.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/9/responsive/amleto_con_teschio-xs.jpg 300w ,https://www.freeme.name/media/posts/9/responsive/amleto_con_teschio-sm.jpg 480w ,https://www.freeme.name/media/posts/9/responsive/amleto_con_teschio-md.jpg 768w"  alt="" width="489" height="406"></figure>
 <p>Implement an Automation can be very complex task, to get the best value out of automation the scope and use case of an automation solution must be fully developed and understood before you can rely on it. It can be a black box but must produce predictable and reliable results in order to define pass and fail conditions.</p>
 <p>Automation relies on either being able to control for inputs or being able to handle errors. An automation solution might crash when something goes wrong, but it might also silently fail and continue.</p>
 <p class="align-center"><strong>We need to know when the automation is not functioning as expected.</strong></p>
 <p>You need to monitor your automated processes. Try to simplify the problem, easy problems are good candidates to automate, they provide an easy way to test the effectiveness of automation and are easier to check for errors and monitor.</p>
-<figure class="post_center_image" ><img loading="lazy" src="https://freeme.name/media/posts/9/ai101-2.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/9/responsive/ai101-2-xs.jpg 300w ,https://freeme.name/media/posts/9/responsive/ai101-2-sm.jpg 480w ,https://freeme.name/media/posts/9/responsive/ai101-2-md.jpg 768w"  alt="Image by Dreamstime" width="600" height="400">
+<figure class="post_center_image" ><img loading="lazy" src="https://www.freeme.name/media/posts/9/ai101-2.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/9/responsive/ai101-2-xs.jpg 300w ,https://www.freeme.name/media/posts/9/responsive/ai101-2-sm.jpg 480w ,https://www.freeme.name/media/posts/9/responsive/ai101-2-md.jpg 768w"  alt="Image by Dreamstime" width="600" height="400">
 <figcaption >Image by Dreamstime</figcaption>
 </figure>
 <p>Automation is to avoid boring and repetitive tasks that would generate little value if carried out by a human. Borrowing a concept from software engineering, the target is to be DRY. Don't repeat yourself. This philosophy aims to reduce repetition by using abstractions to avoid redundancy. The DRY principle is stated as "Every piece of knowledge must have a single, unambiguous, authoritative representation within a system". Violations to this principle are commonly taken as "waste of everyone's time".</p>
@@ -618,28 +618,28 @@ Publii is a static-website-building tool for every skill level, from beginner to
         <author>
             <name>Gianluigi Mucciolo</name>
         </author>
-        <link href="https://freeme.name/initial-commit/"/>
-        <id>https://freeme.name/initial-commit/</id>
+        <link href="https://www.freeme.name/initial-commit/"/>
+        <id>https://www.freeme.name/initial-commit/</id>
             <category term="Where Everything Started"/>
             <category term="Talks"/>
             <category term="Guide"/>
             <category term="Automation"/>
 
-        <updated>2020-06-23T23:08:59+02:00</updated>
+        <updated>2020-06-23T23:10:02+02:00</updated>
             <summary>
                 <![CDATA[
-                        <img src="https://freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg" alt="" />
+                        <img src="https://www.freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg" alt="" />
                     What is the purpose of the blog? Why it was created? The post is about answers that change over time.
                 ]]>
             </summary>
         <content type="html">
             <![CDATA[
-                    <img src="https://freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg" alt="" />
+                    <img src="https://www.freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg" alt="" />
                 <p>What is the purpose of the blog? Why it was created? The post is about answers that change over time. </p>
 <hr>
 <p><span data-preserver-spaces="true">Hello, I am Gianluigi, passionate in Artificial Intelligence, Cloud Technologies and sometimes I like to contribute to Open Source. </span></p>
 <p>I got my master’s degree in Computer Science at the University Of Salerno. Salerno is a city located in the south of Italy. I live in Cilento, one of the most beautiful and wild areas of Campania.</p>
-<figure class="post__image post_center_image" ><img loading="lazy" src="https://freeme.name/media/posts/8/101400142_2907208436001105_1909684099233087488_o-2.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-xs.jpg 300w ,https://freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-sm.jpg 480w ,https://freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-md.jpg 768w"  alt="Photo by Angelo Vitolo" width="1920" height="1080">
+<figure class="post__image post_center_image" ><img loading="lazy" src="https://www.freeme.name/media/posts/8/101400142_2907208436001105_1909684099233087488_o-2.jpg" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-xs.jpg 300w ,https://www.freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-sm.jpg 480w ,https://www.freeme.name/media/posts/8/responsive/101400142_2907208436001105_1909684099233087488_o-2-md.jpg 768w"  alt="Photo by Angelo Vitolo" width="1920" height="1080">
 <figcaption >Photo by <a href="https://www.facebook.com/angelo.vitolo.7" target="_blank" rel="noopener noreferrer">Angelo Vitolo</a></figcaption>
 </figure>
 <p><span data-preserver-spaces="true">I spent three month at </span><em><span data-preserver-spaces="true">Technische Universität of Wien</span></em><span data-preserver-spaces="true"> where I wrote my master thesis in Computer Vision about <a href="https://www.semanticscholar.org/paper/Analysis-and-Calibration-of-a-Mirror-Setup-%2C-Videos-Mucciolo-Koneczny/7b123c0a2dc75ab7e468e212c123952840faf14d" target="_blank" rel="noopener noreferrer">Analysis and Calibration of a Mirror Setup producing Mirror-reflected, Multiview-videos</a>.</span></p>
@@ -648,7 +648,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
 <p><span data-preserver-spaces="true">Despite my experience or preferences, I always try to keep up to date with other technology so that I can keep improving my knowledge and skills. I believe in always choosing the right tool for the job. I have a strong focus on automation and engineering best practices like CI / CD and Infrastructure as Code.</span></p>
 <p>I like to research, practice, and learn new things. This blog aims to gather my experiences and what I learn over time. It tells about travels, I like to discover new cultures and places. I also like business trips, they are a good opportunity to meet colleagues, learn new skills, and new ways of working.</p>
 <p><span data-preserver-spaces="true">Here, I share slides of my public speeches and technical meetings, personal notes, and tips &amp; tricks about my interests. </span></p>
-<figure class="post__image post_center_image" ><img loading="lazy" src="https://freeme.name/media/posts/8/Schermata-2020-06-01-alle-21.19.53.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-xs.png 300w ,https://freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-sm.png 480w ,https://freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-md.png 768w"  alt="" width="1920" height="1080">
+<figure class="post__image post_center_image" ><img loading="lazy" src="https://www.freeme.name/media/posts/8/Schermata-2020-06-01-alle-21.19.53.png" sizes="(max-width: 48em) 100vw, 100vw" srcset="https://www.freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-xs.png 300w ,https://www.freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-sm.png 480w ,https://www.freeme.name/media/posts/8/responsive/Schermata-2020-06-01-alle-21.19.53-md.png 768w"  alt="" width="1920" height="1080">
 <figcaption >Speech at NOI Techpark Bozen</figcaption>
 </figure>
 <p><span data-preserver-spaces="true">I'm driven by a deep conviction, I believe Technology should be a way to improve people's lives. I think that tech progress should be always aware of people. </span></p>
