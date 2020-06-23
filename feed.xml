@@ -10,6 +10,18 @@
     <id>https://www.freeme.name</id>
 
     <entry>
+        <title>it</title>
+        <author>
+            <name>Gianluigi Mucciolo</name>
+        </author>
+        <link href="https://www.freeme.name/it/"/>
+        <id>https://www.freeme.name/it/</id>
+
+        <updated>2020-06-23T23:45:09+02:00</updated>
+            <summary></summary>
+        <content></content>
+    </entry>
+    <entry>
         <title>Infrastructure as Code CloudFormation</title>
         <author>
             <name>Gianluigi Mucciolo</name>
@@ -18,7 +30,7 @@
         <id>https://www.freeme.name/cloudoformation-iac/</id>
             <category term="Talks"/>
 
-        <updated>2020-06-23T23:11:56+02:00</updated>
+        <updated>2020-06-23T23:45:09+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://www.freeme.name/media/posts/13/Diapositiva1-2.png" alt="" />
@@ -427,7 +439,7 @@ Resources:
         <id>https://www.freeme.name/create-a-personal-website/</id>
             <category term="Guide"/>
 
-        <updated>2020-06-23T23:11:56+02:00</updated>
+        <updated>2020-06-23T23:45:09+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://www.freeme.name/media/posts/10/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="" />
@@ -565,7 +577,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
         <id>https://www.freeme.name/do-you-automate/</id>
             <category term="Automation"/>
 
-        <updated>2020-06-23T23:11:56+02:00</updated>
+        <updated>2020-06-23T23:45:09+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://www.freeme.name/media/posts/9/franck-v-U3sOwViXhkY-unsplash.jpg" alt="" />
@@ -625,7 +637,7 @@ Publii is a static-website-building tool for every skill level, from beginner to
             <category term="Guide"/>
             <category term="Automation"/>
 
-        <updated>2020-06-23T23:11:56+02:00</updated>
+        <updated>2020-06-23T23:45:09+02:00</updated>
             <summary>
                 <![CDATA[
                         <img src="https://www.freeme.name/media/posts/8/danielle-macinnes-IuLgi9PWETU-unsplash.jpg" alt="" />
